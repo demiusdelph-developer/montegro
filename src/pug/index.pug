@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+    link(rel="stylesheet", href="./css/swiper.min.css")
+    link(rel="stylesheet", href="./css/style.min.css")
+    link(rel="stylesheet", href="./css/animate.min.css")
+  body
+    header.header
+      .container
+        include ./templates/_navigation.pug
+        .title.
+          Академия футбола
+        .subtitle.
+          для детей от 3 до 16 лет
+        .form(action="send.php" method="POST" class="form header__form")
+          .header__input-group
+            label(for="userName" class="label header__form__label")
+            input(type="text" name="userName" class="input form__input header__form__input" id="userName" placeholder="Ваше имя:")
+          .header__input-group
+            label(for="userPhone" class="label header__form__label")
+            input(type="tel" name="userPhone" class="input form__input header__form__input" id="userPhone" placeholder=" Номер телефона:")
+          .button(class="header__form__button").
+            Записаться на тренировку
+    section.content
+    footer.footer
+    script(src="./js/swiper.min.js")
+    script(src="./js/wow.min.js")
+    script(src="./js/jquery-3.4.1.min.js")
+    script(src="./js/jquery.validate.min.js")
+    script(src="./js/jquery.mask.min.js")
+    script(src="./js/main.js")
+

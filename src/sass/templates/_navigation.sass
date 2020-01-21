@@ -1,0 +1,38 @@
+.navigation
+  display: flex
+  align-items: center
+  font-family: 'Roboto Light'
+  justify-content: space-between
+  padding-top: 1rem
+  padding-left: 1rem
+  a
+    color: $light
+    text-decoration: none
+  .nav
+    display: flex
+    margin: 0
+    &__links
+      font-family: 'Roboto Light'
+      font-size: 1.07rem
+      display: flex
+      align-items: center
+      &::after
+        display: flex
+        content: url('../img/line_menu.png')
+        margin: 0 1.3rem
+      &:last-child
+        &::after
+          content: ''
+          margin: 0
+  .contacts
+    margin-left: 5.714rem
+    &__tel
+      text-decoration: none
+      font-family: 'Roboto-bold'
+      font-size: 1.357rem
+      margin-right: 1rem
+      margin-left: 3rem
+      &--digits
+        color: #ffea3f  
+  &__button
+    margin-left: 1rem
